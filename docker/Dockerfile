@@ -24,7 +24,7 @@ RUN apt-get install -y curl grep sed dpkg && \
     apt-get clean
 
 RUN pip install --upgrade pip==9.0.3 && pip install \
-    cupy-cuda80\
+    cupy-cuda92\
     h5py \
     opencv-python \
     protobuf \
