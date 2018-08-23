@@ -30,5 +30,5 @@ or
 `docker exec username_jupyter_1 nohup tensorboard --logdir=/root/your/log/path`
 
 6. Login to remote machine from your client machine.  
-`ssh -L 8888:localhost:8888 (-l 6006:localhost:6006) -l user_name server.address`
+`ssh -L 8888:localhost:8888 (-L 6006:localhost:6006) -l user_name server.address`
 
