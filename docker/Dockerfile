@@ -35,7 +35,7 @@ RUN pip install --upgrade pip==9.0.3 && pip install \
     graphviz \
     jupyterthemes
 
-WORKDIR /root
+WORKDIR /root/jupyter_playground
 #RUN jt -t monokai -f inconsolata -N -T 
 
 ENTRYPOINT []
