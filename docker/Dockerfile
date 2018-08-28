@@ -34,7 +34,8 @@ RUN pip install --upgrade pip==9.0.3 && pip install \
     keras \
     graphviz \
     jupyterthemes \
-    pydot
+    pydot \
+    tqdm
 
 WORKDIR /root/jupyter_playground
 #RUN jt -t monokai -f inconsolata -N -T 
