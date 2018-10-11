@@ -23,7 +23,7 @@ RUN apt-get install -y curl grep sed dpkg && \
     rm tini.deb && \
     apt-get clean
 
-RUN pip install --upgrade pip==9.0.3 && pip install \
+RUN pip install --upgrade pip==9.0.3 nltk && pip install \
     cupy \
     h5py \
     opencv-python \
@@ -36,7 +36,12 @@ RUN pip install --upgrade pip==9.0.3 && pip install \
     jupyterthemes \
     pydot \
     tqdm
-
+RUN wget https://github.com/sharkdp/bat/releases/download/v0.7.1/bat-musl_0.7.1_amd64.deb && \
+    dpkg -i bat-musl_0.7.1_amd64.deb
+RUN git clone https://github.com/KaimingHe/deep-residual-networks.git 
+#    mv deep-residual-networks/prototxt/ResNet* ~/.chainer/pfnet/chainer/models/
+RUN wget http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel 
+#    mv VGG_ILSVRC_16_layers.caffemodel ~/.chainer//pfnet/chainer/models/
 WORKDIR /root/jupyter_playground
 #RUN jt -t monokai -f inconsolata -N -T 
 
