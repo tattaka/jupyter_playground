@@ -36,7 +36,8 @@ RUN pip install --upgrade pip==9.0.3 nltk && pip install \
     graphviz \
     jupyterthemes \
     pydot \
-    tqdm
+    tqdm \
+    kaggle
 RUN wget https://github.com/sharkdp/bat/releases/download/v0.7.1/bat-musl_0.7.1_amd64.deb && \
     dpkg -i bat-musl_0.7.1_amd64.deb
 RUN git clone https://github.com/KaimingHe/deep-residual-networks.git 
