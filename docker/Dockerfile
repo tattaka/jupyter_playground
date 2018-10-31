@@ -30,6 +30,7 @@ RUN pip install --upgrade pip==9.0.3 nltk && pip install \
     protobuf \
     chainer \
     chainercv==0.8.0 \
+    chainerui \
     tensorflow-gpu \
     keras \
     graphviz \
