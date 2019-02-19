@@ -60,6 +60,7 @@ RUN pip install --upgrade pip==9.0.3 nltk && pip install \
     pydot \
     tqdm \
     kaggle \
+    scikit-image \
     imgaug \
     albumentations
 RUN wget https://github.com/sharkdp/bat/releases/download/v0.7.1/bat-musl_0.7.1_amd64.deb && \
